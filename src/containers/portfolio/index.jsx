@@ -92,7 +92,7 @@ const portfolioData = [
         id: 2,
         name: 'Work Day Scheduler',
         image: workday2,
-        link: '',
+        link: 'https://safwaan41.github.io/Scheduler/Develop/',
         link2: 'https://github.com/safwaan41/Scheduler'
     }
 ]

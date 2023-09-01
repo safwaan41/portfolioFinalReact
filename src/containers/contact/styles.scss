@@ -1,0 +1,28 @@
+.contact{
+    &__content{
+        padding: 20px;
+
+        &__header-text{
+            color: var(--yellow-theme-sub-text-color);
+            display: inline-block;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 1em;
+            letter-spacing: .5px;
+            position: relative;
+            
+            text-transform: uppercase;
+            padding: 5px 10px;
+            border-bottom: 2px solid var(--yellow-theme-main-color);
+        }
+
+        &__header-text::before,
+        &__header-text::after{
+            position: absolute;
+            content: "";
+            width: 2px;
+            height: 5px;
+            background-color: var(--yellow-theme-main-color);
+        }
+    }
+}

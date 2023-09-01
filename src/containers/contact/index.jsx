@@ -1,7 +1,8 @@
 import React from "react";
 import { BsInfoCircleFill } from 'react-icons/bs'
 import PageHeaderContent from "../../components/pageHeaderContent";
-import{Animate} from 'react-simple-animate'
+import { Animate } from 'react-simple-animate'
+import './styles.scss'
 
 const Contact = () => {
     return (
@@ -44,10 +45,17 @@ const Contact = () => {
                         <div className="contact__content__form__controlswrapper">
                             <div className="nameWrapper">
                                 <input type={'text'} name="name" className="inputName" />
+                                <label htmlFor="name" className="nameLabel">Name</label>
                             </div>
-                            <div className="emailWrapper"></div>
-                            <div className="descriptionWrapper"></div>
-
+                            <div className="emailWrapper">
+                                <input type={'text'} name="email" className="inputEmail" />
+                                <label htmlFor="email" className="emailLabel">Name</label>
+                            </div>
+                            <div className="descriptionWrapper">
+                                <input type={'text'} name="description" className="inputDescription" />
+                                <label htmlFor="description" className="descriptionLabel">Description</label>
+                            </div>
+                            <button>Submit</button>
                         </div>
 
                     </div>
