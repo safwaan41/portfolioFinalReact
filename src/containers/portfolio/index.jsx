@@ -109,14 +109,19 @@ const filterData = [
 
 const Portfolio = () => {
 
-    const [filterdvalue,setFilteredvalue] = useState(1)
+    const [filterdvalue, setFilteredvalue] = useState(1)
+    const [hoveredValue, setHoveredValue] = useState(null);
 
     function handleFilter(currentId) {
         setFilteredvalue(currentId)
     };
 
-    const filteredItems = filterdvalue ===1 ? portfolioData :
-    portfolioData.filter(item=>item.id === filterdvalue)
+    function handleHover(index) {
+        setHoveredValue(index)
+    }
+
+    const filteredItems = filterdvalue === 1 ? portfolioData :
+        portfolioData.filter(item => item.id === filterdvalue)
 
 
     return (
@@ -131,7 +136,7 @@ const Portfolio = () => {
                 <ul className="portfolio__content__filter">
                     {
                         filterData.map(item => (
-                            <li className= {item.filterId === filterdvalue ? 'active' : ''} onClick={()=>handleFilter(item.filterId)} key={item.filterId}>
+                            <li className={item.filterId === filterdvalue ? 'active' : ''} onClick={() => handleFilter(item.filterId)} key={item.filterId}>
 
                                 {
                                     item.label
@@ -143,19 +148,27 @@ const Portfolio = () => {
                 </ul>
                 <div className="portfolio__content__cards">
                     {
-                        filteredItems.map((item,index)=>(
-                            <div className="portfolio__content__cards__item" key ={`cardItem${item.name.trim()}`}
-                            onMouseEnter={()=>handleHover(index)}
-                            onMouseLeave={()=>handleHover(null)}
+                        filteredItems.map((item, index) => (
+                            <div className="portfolio__content__cards__item" key={`cardItem${item.name.trim()}`}
+                                onMouseEnter={() => handleHover(index)}
+                                onMouseLeave={() => handleHover(null)}
                             >
 
                                 <div className="portfolio__content__cards__item__img-wrapper">
                                     <a>
-                                        <img alt="preview img" src={item.image}/>
+                                        <img alt="preview img" src={item.image} />
                                     </a>
 
                                 </div>
                                 <div className="overlay">
+                                    {
+                                        index === hoveredValue && (
+                                            <div>
+                                                <p>{item.name}</p>
+                                                <button>Visit</button>
+                                            </div>
+                                        )
+                                    }
 
                                 </div>
 
