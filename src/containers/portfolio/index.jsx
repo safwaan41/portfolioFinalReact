@@ -19,63 +19,76 @@ import './styles.scss'
 const portfolioData = [
     {
         id: 2,
-        name: 'Code Quiz',
-        image: codeQ2
-    },
-    {
-        id: 3,
-        name: 'Ecommerce Back End',
-        image: ecom3
-    },
-    {
-        id: 3,
-        name: 'Employee Tracker',
-        image: emp3
-    },
-    {
-        id: 3,
-        name: 'Express Note Taker',
-        image: note2
-    },
-    {
-        id: 2,
-        name: 'Password Generator',
-        image: password2
-    },
-    {
-        id: 2,
-        name: 'First Portfolio Project',
-        image: port2
-    },
-    {
-        id: 3,
-        name: 'PWA Text Editor',
-        image: pwa3
+        name: 'Streamly! Website',
+        image: streamly2,
+        link: ''
     },
     {
         id: 2,
         name: "reFresh Website",
-        image: refresh2
-    },
-    {
-        id: 2,
-        name: 'SEO Website',
-        image: seo2
+        image: refresh2,
+        link: ''
     },
     {
         id: 3,
         name: 'Social Network API',
-        image: api3
+        image: api3,
+        link: ''
+    },
+    {
+        id: 3,
+        name: 'Ecommerce Back End',
+        image: ecom3,
+        link: ''
     },
     {
         id: 2,
-        name: 'Streamly! Website',
-        image: streamly2
+        name: 'Code Quiz',
+        image: codeQ2,
+        link: ''
     },
+    {
+        id: 3,
+        name: 'Employee Tracker',
+        image: emp3,
+        link: ''
+    },
+    {
+        id: 3,
+        name: 'Express Note Taker',
+        image: note2,
+        link: ''
+    },
+    {
+        id: 2,
+        name: 'Password Generator',
+        image: password2,
+        link: ''
+    },
+    {
+        id: 2,
+        name: 'First Portfolio Project',
+        image: port2,
+        link: ''
+    },
+    {
+        id: 3,
+        name: 'PWA Text Editor',
+        image: pwa3,
+        link: ''
+    },
+    {
+        id: 2,
+        name: 'SEO Website',
+        image: seo2,
+        link: ''
+    },
+
     {
         id: 2,
         name: 'Work Day Scheduler',
-        image: workday2
+        image: workday2,
+        link: ''
     }
 ]
 
