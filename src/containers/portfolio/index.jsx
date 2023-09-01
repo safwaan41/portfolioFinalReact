@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
 import { BsInfoCircleFill } from 'react-icons/bs'
@@ -170,10 +171,10 @@ const Portfolio = () => {
                                         index === hoveredValue && (
                                             <div>
                                                 <p>{item.name}</p>
-                                                <a href={item.link} target="_blank" >
+                                                <a href={item.link} target="_blank" rel="noreferrer" >
                                                     <button>Visit</button>
                                                 </a>
-                                                <a href={item.link2} target="_blank" >
+                                                <a href={item.link2} target="_blank" rel="noreferrer" >
                                                     <button>Repo</button>
                                                 </a>
                                             </div>
