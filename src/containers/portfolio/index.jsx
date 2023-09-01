@@ -63,22 +63,15 @@ const portfolioData = [
         id: 3,
         name: 'Express Note Taker',
         image: note2,
-        link: '',
-        link2: ''
+        link: 'https://fathomless-beyond-99783-d07bf0b91be9.herokuapp.com/',
+        link2: 'https://github.com/safwaan41/noteTakerExpress'
     },
     {
         id: 2,
         name: 'Password Generator',
         image: password2,
-        link: '',
-        link2: ''
-    },
-    {
-        id: 2,
-        name: 'First Portfolio Project',
-        image: port2,
-        link: '',
-        link2: ''
+        link: 'https://safwaan41.github.io/Password-Generator/',
+        link2: 'https://github.com/safwaan41/Password-Generator'
     },
     {
         id: 3,
@@ -91,8 +84,8 @@ const portfolioData = [
         id: 2,
         name: 'SEO Website',
         image: seo2,
-        link: '',
-        link2: ''
+        link: 'https://safwaan41.github.io/HoriseonRefactor/',
+        link2: 'https://github.com/safwaan41/HoriseonRefactor'
     },
 
     {
@@ -100,7 +93,7 @@ const portfolioData = [
         name: 'Work Day Scheduler',
         image: workday2,
         link: '',
-        link2: ''
+        link2: 'https://github.com/safwaan41/Scheduler'
     }
 ]
 
@@ -180,6 +173,9 @@ const Portfolio = () => {
                                                 <p>{item.name}</p>
                                                 <a href={item.link} target="_blank" >
                                                     <button>Visit</button>
+                                                </a>
+                                                <a href={item.link2} target="_blank" >
+                                                    <button>Repo</button>
                                                 </a>
                                             </div>
                                         )
