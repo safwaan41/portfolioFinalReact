@@ -118,7 +118,7 @@ const Portfolio = () => {
                 <ul className="portfolio__content__filter">
                     {
                         filterData.map(item => (
-                            <li onClick={()=>handleFilter(item.filterId)} key={item.filterId}>
+                            <li className= {item.filterId === filterdvalue ? 'active' : ''} onClick={()=>handleFilter(item.filterId)} key={item.filterId}>
 
                                 {
                                     item.label
