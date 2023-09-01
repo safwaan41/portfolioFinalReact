@@ -42,7 +42,9 @@ const Contact = () => {
                     <div className="contact__content__form">
 
                         <div className="contact__content__form__controlswrapper">
-                            <div className="nameWrapper"></div>
+                            <div className="nameWrapper">
+                                <input type={'text'} name="name" className="inputName" />
+                            </div>
                             <div className="emailWrapper"></div>
                             <div className="descriptionWrapper"></div>
 

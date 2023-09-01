@@ -21,74 +21,86 @@ const portfolioData = [
         id: 2,
         name: 'Streamly! Website',
         image: streamly2,
-        link: ''
+        link: 'https://safwaan41.github.io/entertainment-finder/index.html',
+        link2: 'https://github.com/safwaan41/entertainment-finder'
     },
     {
         id: 2,
         name: "reFresh Website",
         image: refresh2,
-        link: ''
+        link: 'https://fathomless-mountain-82440-c3be6a1b5065.herokuapp.com/',
+        link2: 'https://github.com/safwaan41/REFRESH'
     },
     {
         id: 3,
         name: 'Social Network API',
         image: api3,
-        link: ''
+        link: 'https://drive.google.com/file/d/1Ey6fSmqcDyD7KWaLd3NeB_i8SkX8f1re/view',
+        link2: 'https://github.com/safwaan41/socialNetworkAPI'
     },
     {
         id: 3,
         name: 'Ecommerce Back End',
         image: ecom3,
-        link: ''
+        link: 'https://drive.google.com/file/d/1SDWvYwDHuudX0DA3vPS-dVD91GOQJ4HR/view',
+        link2: 'https://github.com/safwaan41/eCommerce'
     },
     {
         id: 2,
         name: 'Code Quiz',
         image: codeQ2,
-        link: ''
+        link: 'https://safwaan41.github.io/Code-Quiz/',
+        link2: 'https://github.com/safwaan41/Code-Quiz'
     },
     {
         id: 3,
         name: 'Employee Tracker',
         image: emp3,
-        link: ''
+        link: 'https://drive.google.com/file/d/1Jtcw93Q_8Ft8SqoU538ZCCvwM3k5ciZm/view',
+        link2: 'https://github.com/safwaan41/Employee-Tracker'
     },
     {
         id: 3,
         name: 'Express Note Taker',
         image: note2,
-        link: ''
+        link: '',
+        link2: ''
     },
     {
         id: 2,
         name: 'Password Generator',
         image: password2,
-        link: ''
+        link: '',
+        link2: ''
     },
     {
         id: 2,
         name: 'First Portfolio Project',
         image: port2,
-        link: ''
+        link: '',
+        link2: ''
     },
     {
         id: 3,
         name: 'PWA Text Editor',
         image: pwa3,
-        link: ''
+        link: 'https://text-editor-994141-8f0f398e2918.herokuapp.com/',
+        link2: 'https://github.com/safwaan41/PWAtext'
     },
     {
         id: 2,
         name: 'SEO Website',
         image: seo2,
-        link: ''
+        link: '',
+        link2: ''
     },
 
     {
         id: 2,
         name: 'Work Day Scheduler',
         image: workday2,
-        link: ''
+        link: '',
+        link2: ''
     }
 ]
 
@@ -149,6 +161,7 @@ const Portfolio = () => {
                 <div className="portfolio__content__cards">
                     {
                         filteredItems.map((item, index) => (
+                            
                             <div className="portfolio__content__cards__item" key={`cardItem${item.name.trim()}`}
                                 onMouseEnter={() => handleHover(index)}
                                 onMouseLeave={() => handleHover(null)}
@@ -165,7 +178,9 @@ const Portfolio = () => {
                                         index === hoveredValue && (
                                             <div>
                                                 <p>{item.name}</p>
-                                                <button>Visit</button>
+                                                <a href={item.link} target="_blank" >
+                                                    <button>Visit</button>
+                                                </a>
                                             </div>
                                         )
                                     }
