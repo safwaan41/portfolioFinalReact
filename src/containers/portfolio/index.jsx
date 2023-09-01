@@ -102,6 +102,10 @@ const Portfolio = () => {
         setFilteredvalue(currentId)
     };
 
+    const filteredItems = filterdvalue ===1 ? portfolioData :
+    portfolioData.filter(item=>item.id === filterdvalue)
+
+
     return (
         <section id="portfolio" className="portfolio">
 
@@ -126,8 +130,8 @@ const Portfolio = () => {
                 </ul>
                 <div className="portfolio__content__cards">
                     {
-                        portfolioData.map((item)=>(
-                            <div className="portfolio__content__cards__item" key ={item.id}>
+                        filteredItems.map((item)=>(
+                            <div className="portfolio__content__cards__item" key ={`cardItem${item.name.trim()}`}>
 
                                 <div className="portfolio__content__cards__item__img-wrapper">
                                     <a>
