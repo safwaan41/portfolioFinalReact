@@ -7,7 +7,6 @@ import ecom3 from "../../images/eCommerceB.png";
 import emp3 from '../../images/empTrackB.png'
 import note2 from '../../images/NoteTakerScreenShotF.png'
 import password2 from '../../images/passGenF.png'
-import port2 from '../../images/portfolioF.png'
 import pwa3 from '../../images/pwaB.png'
 import refresh2 from '../../images/reFreshF.png'
 import seo2 from '../../images/seoF.png'
