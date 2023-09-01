@@ -98,6 +98,10 @@ const Portfolio = () => {
 
     const [filterdvalue,setFilteredvalue] = useState(1)
 
+    function handleFilter(currentId) {
+        setFilteredvalue(currentId)
+    };
+
     return (
         <section id="portfolio" className="portfolio">
 
@@ -110,7 +114,7 @@ const Portfolio = () => {
                 <ul className="portfolio__content__filter">
                     {
                         filterData.map(item => (
-                            <li onClick={()=>handleFilter()} key={item.filterId}>
+                            <li onClick={()=>handleFilter(item.filterId)} key={item.filterId}>
 
                                 {
                                     item.label
