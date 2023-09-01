@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React from "react";
+import React, { useState } from "react";
 import { BsInfoCircleFill } from 'react-icons/bs'
 import PageHeaderContent from "../../components/pageHeaderContent";
 import codeQ2 from '../../images/codeQuizF.png';
@@ -95,6 +95,9 @@ const filterData = [
 ]
 
 const Portfolio = () => {
+
+    const [filterdvalue,setFilteredvalue] = useState(1)
+
     return (
         <section id="portfolio" className="portfolio">
 
