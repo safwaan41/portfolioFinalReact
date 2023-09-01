@@ -143,13 +143,19 @@ const Portfolio = () => {
                 </ul>
                 <div className="portfolio__content__cards">
                     {
-                        filteredItems.map((item)=>(
-                            <div className="portfolio__content__cards__item" key ={`cardItem${item.name.trim()}`}>
+                        filteredItems.map((item,index)=>(
+                            <div className="portfolio__content__cards__item" key ={`cardItem${item.name.trim()}`}
+                            onMouseEnter={()=>handleHover(index)}
+                            onMouseLeave={()=>handleHover(null)}
+                            >
 
                                 <div className="portfolio__content__cards__item__img-wrapper">
                                     <a>
                                         <img alt="preview img" src={item.image}/>
                                     </a>
+
+                                </div>
+                                <div className="overlay">
 
                                 </div>
 
