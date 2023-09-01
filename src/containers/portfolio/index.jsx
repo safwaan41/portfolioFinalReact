@@ -110,7 +110,7 @@ const Portfolio = () => {
                 <ul className="portfolio__content__filter">
                     {
                         filterData.map(item => (
-                            <li key={item.filterId}>
+                            <li onClick={()=>handleFilter()} key={item.filterId}>
 
                                 {
                                     item.label
