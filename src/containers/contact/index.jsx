@@ -5,6 +5,9 @@ import { Animate } from 'react-simple-animate'
 import './styles.scss'
 
 const Contact = () => {
+
+    
+
     return (
         <section id="contact" className="contact">
 

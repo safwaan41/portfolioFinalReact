@@ -9,17 +9,21 @@
     &__text-wrapper {
         display: flex;
         justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        overflow: hidden;
+
 
         h1{
             color: var(--yellow-theme-main-color);
-            margin: 0px;
+            margin: 0 auto;
             font-weight: 500;
             font-size: 8rem;
             line-height: 11rem;
-            position: relative;
+            // position: relative;
             overflow: hidden;
             white-space: nowrap;
-            animation: typingEffectAnimation 2.5s steps(20,end)
+            animation: typingEffectAnimation 2.5s steps(60,end)
         }
     }
     &__contact-me {
@@ -69,7 +73,7 @@
 
 @keyframes typingEffectAnimation {
     from {
-        width: 0;
+        width: 0%;
     }
     to {
         width: 100%;
