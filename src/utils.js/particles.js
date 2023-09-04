@@ -45,25 +45,25 @@ export default {
             outModes: {
                 default: "bounce",
             },
-            random: false,
-            speed: 6,
-            straight: false,
+            random: true,
+            speed: 5,
+            straight: true,
         },
         number: {
             density: {
                 enable: true,
                 area: 800,
             },
-            value: 80,
+            value: 77,
         },
         opacity: {
             value: 0.5,
         },
         shape: {
-            type: "circle",
+            type: "polygon",
         },
         size: {
-            value: { min: 1, max: 5 },
+            value: { min: 1, max: 7 },
         },
     },
     detectRetina: true,

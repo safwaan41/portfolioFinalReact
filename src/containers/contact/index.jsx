@@ -1,21 +1,21 @@
 import React from "react";
 import { BsInfoCircleFill } from 'react-icons/bs'
-import PageHeaderContent from "../../components/pageHeaderContent";
+import PageHeaderinfo from "../../components/pageHeaderContent";
 import { Animate } from 'react-simple-animate'
 import './styles.scss'
 
-const Contact = () => {
+const person = () => {
 
 
 
     return (
-        <section id="contact" className="contact">
+        <section id="person" className="person">
 
-            <PageHeaderContent
-                headerText='Contact Me'
+            <PageHeaderinfo
+                headerText='person Me'
                 icon={<BsInfoCircleFill size={40} />}
             />
-            <div className="contact__content">
+            <div className="person__info">
                 <Animate
                     play
                     duration={1}
@@ -27,15 +27,12 @@ const Contact = () => {
                         transform: 'translateX(0px)'
                     }}
                 >
-                    <h3 className="contact__content__header-text">
+                    <h3 className="person__info__header-text">
                         Let's Talk
                     </h3>
 
                 </Animate>
-                <Animate
-                    play
-                    duration={1}
-                    delay={0}
+                <Animate play duration={1} delay={0}
                     start={{
                         transform: 'translateX(200px)'
                     }}
@@ -43,9 +40,9 @@ const Contact = () => {
                         transform: 'translateX(0px)'
                     }}
                 >
-                    <div className="contact__content__form">
+                    <div className="person__info__form">
 
-                        <div className="contact__content__form__controlswrapper">
+                        <div className="person__info__form__controlswrapper">
                             <div>
                                 <input required type={'text'} name="name" className="inputName" />
                                 <label htmlFor="name" className="nameLabel">Name</label>
@@ -69,4 +66,4 @@ const Contact = () => {
         </section>
     )
 }
-export default Contact;
+export default person;
