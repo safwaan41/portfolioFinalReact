@@ -46,16 +46,16 @@ const Contact = () => {
                     <div className="contact__content__form">
 
                         <div className="contact__content__form__controlswrapper">
-                            <div className="nameWrapper">
-                                <input type={'text'} name="name" className="inputName" />
+                            <div>
+                                <input required type={'text'} name="name" className="inputName" />
                                 <label htmlFor="name" className="nameLabel">Name</label>
                             </div>
-                            <div className="emailWrapper">
-                                <input type={'text'} name="email" className="inputEmail" />
-                                <label htmlFor="email" className="emailLabel">Name</label>
+                            <div>
+                                <input  required type={'text'} name="email" className="inputEmail" />
+                                <label htmlFor="email" className="emailLabel">E-Mail</label>
                             </div>
-                            <div className="descriptionWrapper">
-                                <input type={'text'} name="description" className="inputDescription" />
+                            <div >
+                                <textarea required type={'text'} rows='5'name="description" className="inputDescription" />
                                 <label htmlFor="description" className="descriptionLabel">Description</label>
                             </div>
                             <button>Submit</button>
