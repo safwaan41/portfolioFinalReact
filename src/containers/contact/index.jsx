@@ -6,7 +6,7 @@ import './styles.scss'
 
 const Contact = () => {
 
-    
+
 
     return (
         <section id="contact" className="contact">
@@ -51,16 +51,16 @@ const Contact = () => {
                                 <label htmlFor="name" className="nameLabel">Name</label>
                             </div>
                             <div>
-                                <input  required type={'text'} name="email" className="inputEmail" />
+                                <input required type={'text'} name="email" className="inputEmail" />
                                 <label htmlFor="email" className="emailLabel">E-Mail</label>
                             </div>
                             <div >
-                                <textarea required type={'text'} rows='5'name="description" className="inputDescription" />
+                                <textarea required type={'text'} rows='5' name="description" className="inputDescription" />
                                 <label htmlFor="description" className="descriptionLabel">Description</label>
                             </div>
-                            <button>Submit</button>
-                        </div>
 
+                        </div>
+                        <button>Submit</button>
                     </div>
                 </Animate>
 
