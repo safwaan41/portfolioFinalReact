@@ -1,10 +1,10 @@
 .skills {
-    &__content-wrapper {
+    &__stuff-container {
         display: flex;
         padding: 20px;
         gap: 20px;
 
-        &__inner-content {
+        &__inner-stuff {
             flex: 1;
             display: flex;
             flex-direction: column;
@@ -25,7 +25,7 @@
 
             &__category-text::before , &__category-text::after{
                 position: absolute;
-                content: '';
+                stuff: '';
                 width: 2px;
                 height: 5px;
                 background-color: var(--yellow-theme-main-color);
@@ -44,7 +44,7 @@
                 width: 100%;
             }
 
-            .progressbar-wrapper{
+            .progressbar-container{
                 padding: 50px 0px 0px 0px;
 
                 p{
@@ -62,11 +62,11 @@
 
 @media only screen and (max-width : 765px) {
     .skills{
-        &__content-wrapper{
+        &__stuff-container{
             flex-direction: column;
         }
     }
-    .skills__content-wrapper__inner-content__progressbar-container{
+    .skills__stuff-container__inner-stuff__progressbar-container{
         margin-bottom: 20px;
     }
 }

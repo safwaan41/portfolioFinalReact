@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
 import { BsInfoCircleFill } from 'react-icons/bs'
-import PageHeaderContent from "../../components/pageHeaderContent";
+import PageHeaderinfo from "../../components/pageHeaderContent";
 import codeQ2 from '../../images/codeQuizF.png';
 import ecom3 from "../../images/eCommerceB.png";
 import emp3 from '../../images/empTrackB.png'
@@ -16,7 +16,7 @@ import streamly2 from '../../images/streamlyF.png'
 import workday2 from '../../images/workdayF.png'
 import './styles.scss'
 
-const portfolioData = [
+const portfolioinfo = [
     {
         id: 2,
         name: 'Streamly! Website',
@@ -97,7 +97,7 @@ const portfolioData = [
     }
 ]
 
-const filterData = [
+const data2 = [
     {
         filterId: 1,
         label: 'All'
@@ -125,22 +125,22 @@ const Portfolio = () => {
         setHoveredValue(index)
     }
 
-    const filteredItems = filterdvalue === 1 ? portfolioData :
-        portfolioData.filter(item => item.id === filterdvalue)
+    const filteredItems = filterdvalue === 1 ? portfolioinfo :
+        portfolioinfo.filter(item => item.id === filterdvalue)
 
 
     return (
         <section id="portfolio" className="portfolio">
 
-            <PageHeaderContent
+            <PageHeaderinfo
                 headerText='Portfolio'
                 icon={<BsInfoCircleFill size={40} />}
             />
-            <div className="portfolio__content">
+            <div className="portfolio__info">
 
-                <ul className="portfolio__content__filter">
+                <ul className="portfolio__info__filter">
                     {
-                        filterData.map(item => (
+                        data2.map(item => (
                             <li className={item.filterId === filterdvalue ? 'active' : ''} onClick={() => handleFilter(item.filterId)} key={item.filterId}>
 
                                 {
@@ -151,16 +151,16 @@ const Portfolio = () => {
                         ))
                     }
                 </ul>
-                <div className="portfolio__content__cards">
+                <div className="portfolio__info__cards">
                     {
                         filteredItems.map((item, index) => (
                             
-                            <div className="portfolio__content__cards__item" key={`cardItem${item.name.trim()}`}
+                            <div className="portfolio__info__cards__item" key={`cardItem${item.name.trim()}`}
                                 onMouseEnter={() => handleHover(index)}
                                 onMouseLeave={() => handleHover(null)}
                             >
 
-                                <div className="portfolio__content__cards__item__img-wrapper">
+                                <div className="portfolio__info__cards__item__img-container">
                                     <a>
                                         <img alt="preview img" src={item.image} />
                                     </a>

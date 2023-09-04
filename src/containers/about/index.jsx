@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React from "react";
 import { BsInfoCircleFill } from 'react-icons/bs'
-import PageHeaderContent from "../../components/pageHeaderContent";
+import PageHeaderstuff from "../../components/pageHeaderContent";
 import { Animate } from 'react-simple-animate';
 import './styles.scss';
 import { FaDev, FaDatabase } from 'react-icons/fa';
@@ -9,7 +9,7 @@ import { DiJavascript, DiNodejsSmall } from 'react-icons/di'
 
 
 
-const personalDetails = [
+const myInfo = [
     {
         label: 'Name',
         value: 'Safwaan Ahmed (Saf)'
@@ -39,13 +39,13 @@ const About = () => {
     return (
         <section id="about" className="about">
 
-            <PageHeaderContent
+            <PageHeaderstuff
                 headerText='About Me'
                 icon={<BsInfoCircleFill size={40} />}
             />
-            <div className="about__content">
+            <div className="about__stuff">
 
-                <div className="about__content__personalWrapper">
+                <div className="about__stuff__mycontainer">
                     <Animate
 
                         play
@@ -81,11 +81,11 @@ const About = () => {
                         }}>
 
                         <h3>
-                            Personal Infomation
+                            My Infomation
                         </h3>
                         <ul>
                             {
-                                personalDetails.map((item, i) => (
+                                myInfo.map((item, i) => (
                                     <li key={i}>
                                         <span className="title">{item.label}</span>
                                         <span className="value">{item.value}</span>
@@ -95,7 +95,7 @@ const About = () => {
                         </ul>
                     </Animate>
                 </div>
-                <div className="about__content__servicesWrapper">
+                <div className="about__stuff__servicescontainer">
                     <Animate
 
                         play
@@ -109,7 +109,7 @@ const About = () => {
                         }}
 
                     >
-                        <div className="about__content__servicesWrapper__innerContent">
+                        <div className="about__stuff__servicescontainer__innerstuff">
                             <div>
                                 <FaDev size={60} color="var(--yellow-theme-main-color)" />
                             </div>

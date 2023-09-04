@@ -13,7 +13,7 @@ const Home = () => {
 
     return (
         <section id="home" className="home">
-            <div className="home__text-wrapper">
+            <div className="home__text-container">
                 <h1>
                     Hey! I'm Safwaan
                     <br />
@@ -25,6 +25,7 @@ const Home = () => {
             play
             duration={1.5}
             delay={1}
+
             start = {{
                 transform: 'translateY(550px)',
             }}

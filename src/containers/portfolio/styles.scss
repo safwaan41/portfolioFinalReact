@@ -1,5 +1,5 @@
 .portfolio {
-    &__content {
+    &__info {
         padding: 20px;
         width: 100%;
 
@@ -45,7 +45,7 @@
                     opacity: 1;
                 }
 
-                &__img-wrapper {
+                &__img-container {
                     height: 100%;
 
                     a {
@@ -108,21 +108,21 @@
 }
 
 @media only screen and (max-width: 480px){
-    .portfolio__content__filter > li{
+    .portfolio__info__filter > li{
         font-size: 11px;
     }
 
-    .portfolio__content__cards{
+    .portfolio__info__cards{
         grid-template-columns: repeat(1,1fr);
     }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px){
-    .portfolio__content__filter > li{
+    .portfolio__info__filter > li{
         font-size: 14px;
     }
 
-    .portfolio__content__cards{
+    .portfolio__info__cards{
         grid-template-columns: repeat(2,1fr);
 
         &__item{

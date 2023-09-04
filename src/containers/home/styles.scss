@@ -6,7 +6,7 @@
     align-content: center;
     flex-direction: column;
 
-    &__text-wrapper {
+    &__text-container {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -51,21 +51,21 @@
 }
 
 @media screen and (max-width : 550px) {
-    .home__text-wrapper h1 {
+    .home__text-container h1 {
         font-size: 3rem;
         line-height: 5rem;
     }
 }
 
 @media screen and (max-width : 551px) and (max-width : 765px) {
-    .home__text-wrapper h1 {
+    .home__text-container h1 {
         font-size: 4rem;
         line-height: 6rem;
     }
 }
 
 @media screen and (max-width : 766px) and (max-width : 990px) {
-    .home__text-wrapper h1 {
+    .home__text-container h1 {
         font-size: 6rem;
         line-height: 8rem;
     }
