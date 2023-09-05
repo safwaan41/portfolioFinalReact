@@ -15,26 +15,26 @@ function App() {
 
   const location = useLocation();
 
-  const handleInit = async (main) => {
+  const doInit = async (main) => {
     await loadFull(main)
   }
 
-  const renderParticleJsInHomePage = location.pathname === '/';
+  const displayParticleJsInHomePage = location.pathname === '/';
 
   return (
     <div className="App">
-      {/* particles js */}
+      {}
 
-      {renderParticleJsInHomePage && (
-        <Particles id='particles' options={particles} init={handleInit} />
+      {displayParticleJsInHomePage && (
+        <Particles id='particles' options={particles} init={doInit} />
       )}
 
 
-      {/* navbar */}
+      {}
       <Navbar />
 
 
-      {/* main page content */}
+      {}
       <div className='App__main-page-content'>
         <Routes>
           <Route index path='/' element={<Home />} />
