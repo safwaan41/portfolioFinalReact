@@ -14,6 +14,7 @@ import seo2 from '../../images/seoF.png'
 import api3 from '../../images/socialNetworkAPIB.png'
 import streamly2 from '../../images/streamlyF.png'
 import workday2 from '../../images/workdayF.png'
+import awristocrats2 from '../../images/AwristocratsF.png'
 import './styles.scss'
 
 const portfolioinfo = [
@@ -30,6 +31,13 @@ const portfolioinfo = [
         image: refresh2,
         link: 'https://fathomless-mountain-82440-c3be6a1b5065.herokuapp.com/',
         link2: 'https://github.com/safwaan41/REFRESH'
+    },
+    {
+        id: 2,
+        name: "Awristocrats: A Luxury Watch Retailer",
+        image: awristocrats2,
+        link: 'https://gentle-citadel-72526-fb3aee39e14f.herokuapp.com/',
+        link2: 'https://github.com/safwaan41/Awristocrats'
     },
     {
         id: 3,

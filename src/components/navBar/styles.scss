@@ -1,4 +1,22 @@
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* Adjust as needed */
+    z-index: 1000; /* Set a higher z-index value */
+    /* ... Other styles ... */
+  }
+  
+  .nav-icon {
+    position: fixed;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    cursor: pointer;
+    z-index: 2000; /* Set an even higher z-index value */
+    /* ... Other styles ... */
+  }
+.navbar {
     background-color: var(--yellow-theme-nav-background-color);
     height: 80px;
     display: flex;
@@ -25,6 +43,7 @@
             display: flex;
             list-style: none;
             text-align: center;
+            width: 100%;
 
             &__item {
                 line-height: 40px;
@@ -92,3 +111,19 @@
         padding-right: 20px;
     }
 }
+
+.navbar__container__menu {
+    position: absolute;
+    top: 100%; /* Position the dropdown below the navbar */
+    left: 0;
+    width: 100%; /* Set the width to 100% */
+    background-color: #ffffff; /* Adjust as needed */
+    z-index: 1000; /* Set an appropriate z-index */
+    display: none; /* Initially hide the menu */
+    /* Add transitions or animations for a smoother appearance if desired */
+  }
+  
+  /* Define styles for the active menu, if needed */
+  .navbar__container__menu.active {
+    display: block; /* Display the menu when active */
+  }
